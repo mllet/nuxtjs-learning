@@ -1,5 +1,9 @@
 <template>
-    $END$
+    <div>
+        <h3>
+            user嵌套路由--id
+        </h3>
+    </div>
 </template>
 
 <script>
@@ -8,6 +12,8 @@
     }
 </script>
 
-<style scoped>
-
+<style lang='less'>
+h3{
+    text-align: center;
+}
 </style>
