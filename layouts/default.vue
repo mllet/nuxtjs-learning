@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>这里是默认导航</h1>
     <nuxt/>
   </div>
 </template>
@@ -52,4 +53,8 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+    h1{
+        padding-top: 30px;
+        text-align: center;
+    }
 </style>
