@@ -10,6 +10,8 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="less">
+h3{
+    text-align: center;
+}
 </style>

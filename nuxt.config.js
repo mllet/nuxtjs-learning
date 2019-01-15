@@ -28,7 +28,7 @@ module.exports = {
     */
     css: [
         'element-ui/lib/theme-chalk/index.css',
-         'assets/main.css'
+        'assets/main.css'
     ],
 
     /*
@@ -51,7 +51,9 @@ module.exports = {
     axios: {
         // See https://github.com/nuxt-community/axios-module#options
     },
-
+    router: {
+        middleware: 'auth'
+    },
     /*
     ** Build configuration
     */
