@@ -1,17 +1,15 @@
 <template>
     <div>
-        <h3>嵌套路由person</h3>
+        <h3>嵌套路由id2</h3>
     </div>
 </template>
 
 <script>
     export default {
-        name: "person"
+        name: "id2"
     }
 </script>
 
-<style lang="less">
-h3{
-    text-align: center;
-}
+<style scoped>
+
 </style>
