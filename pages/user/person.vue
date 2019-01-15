@@ -1,12 +1,12 @@
 <template>
     <div>
-        嵌套路由id2
+        <h3>嵌套路由id2</h3>
     </div>
 </template>
 
 <script>
     export default {
-        name: "_id2"
+        name: "id2"
     }
 </script>
 

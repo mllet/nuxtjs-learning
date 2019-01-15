@@ -8,12 +8,17 @@
 
 <script>
     export default {
-        name: "_id"
+
+        validate({params}) {
+            console.log(params)
+            // 必须是number类型
+            return /^\d+$/.test(params.id)
+        }
     }
 </script>
 
 <style lang='less'>
-h3{
-    text-align: center;
-}
+    h3 {
+        text-align: center;
+    }
 </style>
