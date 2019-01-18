@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>这里是默认导航</h1>
+    <h1>这里是默认导航&nbsp;<nuxt-link to="/posts">博客</nuxt-link></h1>
     <nuxt/>
   </div>
 </template>

@@ -1,13 +1,18 @@
 <template>
-    $END$
+    <div>
+        <p>博客内容</p>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "posts"
+        name: "posts",
+        layout: 'blog'
     }
 </script>
 
-<style scoped>
-
+<style lang="less">
+    p{
+        text-align: center;
+    }
 </style>
