@@ -18,20 +18,38 @@
                         target="_blank"
                         class="button--grey">GitHub</a>
             </div>
-            <div>
-                <nuxt-link to="/user">首页</nuxt-link>
-                <nuxt/>
-            </div>
+            <el-row>
+                <el-col :span="12" :offset="6">
+                    <nuxt-link to="/user">user</nuxt-link>
+                    <nuxt/>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-button @click="increment">默认按钮+1 <span>当前数值：{{counter}}</span></el-button>
+            </el-row>
         </div>
     </section>
 </template>
 
 <script>
     import Logo from '~/components/Logo.vue'
+    import ElButton from "element-ui/packages/button/src/button";
+    import { mapMutations,mapState } from 'vuex'
 
     export default {
         components: {
+            ElButton,
             Logo
+        },
+        methods:{
+            ...mapMutations([
+                'increment',
+            ])
+        },
+        computed:{
+            ...mapState([
+                'counter'
+            ]),
         }
     }
 </script>
