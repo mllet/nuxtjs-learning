@@ -26,6 +26,7 @@
             </el-row>
             <el-row>
                 <el-button @click="increment">默认按钮+1 <span>当前数值：{{counter}}</span></el-button>
+                <el-button @click="incrementAsync">异步+1 <span>当前数值：{{count}}</span></el-button>
             </el-row>
         </div>
     </section>
@@ -34,7 +35,7 @@
 <script>
     import Logo from '~/components/Logo.vue'
     import ElButton from "element-ui/packages/button/src/button";
-    import { mapMutations,mapState } from 'vuex'
+    import { mapMutations,mapState,mapActions } from 'vuex'
 
     export default {
         components: {
@@ -44,11 +45,14 @@
         methods:{
             ...mapMutations([
                 'increment',
+            ]),
+            ...mapActions([
+                'incrementAsync',
             ])
         },
         computed:{
             ...mapState([
-                'counter'
+                'counter', 'count'
             ]),
         }
     }
